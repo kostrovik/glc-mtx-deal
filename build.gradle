@@ -10,7 +10,7 @@ version '1.0-SNAPSHOT'
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
-mainClassName = 'core.AppCore'
+mainClassName = 'com.github.kostrovik.deal.core.AppCore'
 
 allprojects {
     repositories {
@@ -30,8 +30,7 @@ dependencies {
     testCompile("org.junit.jupiter:junit-jupiter-api:5.2.0")
     testRuntime("org.junit.jupiter:junit-jupiter-engine:5.2.0")
 
-    implementation 'com.github.kostrovik:jfx-control-builder:master-SNAPSHOT'
-    implementation 'com.github.kostrovik:configurator:1.2'
+    compile 'com.github.kostrovik:glc-mtx-core:master-SNAPSHOT'
 
     testCompile "org.testfx:testfx-core:4.0.13-alpha"
     testCompile "org.testfx:testfx-junit5:4.0.13-alpha"
